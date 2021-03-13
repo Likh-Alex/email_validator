@@ -1,0 +1,34 @@
+<body>
+<div class="card">
+  <label for="email">Please enter an email</label>
+  <br>
+  <div class="container"></div>
+  <input type="text" class="form-control"
+         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+         id="email" name="email"
+         ngModel #emailInput="ngModel">
+
+  <span *ngIf="emailInput.valid && emailInput.value">
+      ✅
+    </span>
+
+  <div *ngIf="emailInput.valid && emailInput.value" class="alert alert-danger">
+
+    <div class="info" [hidden]="emailInput.errors">
+      {{emailInput.value}}
+    </div>
+
+    <div class="info" [hidden]="emailInput.errors">
+      {{emailInput.value.substring(0, emailInput.value.indexOf("@"))}}
+    </div>
+
+    <div class="info" [hidden]="emailInput.errors">
+      {{emailInput.value.substring(emailInput.value.indexOf("@"))}}
+    </div>
+
+    <div class="info" [hidden]="emailInput.errors">
+      <a href="mailto:{{emailInput.value}}">That was an easy Task, Systaro!</a>
+    </div>
+  </div>
+</div>
+</body>
