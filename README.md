@@ -17,4 +17,4 @@
 3. Download the [source code](https://github.com/Likh-Alex/email_validator).
 4. Navigate in `terminal` with to the source code root folder and run command `npm install`
 5. Once the packages are installed run command `ng serve`
-6. Once you will see message `✔ Compiled successfully.`- open your browser on `http://localhost:4200/` and use the application.
+6. Once you will see message `✔ Compiled successfully.`- open your browser at `http://localhost:4200/` and use the application.
