@@ -1,27 +1,20 @@
-# EmailValidation
+## Email validator application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+### This application validates the user entered email
 
-## Development server
+- User is prompted to enter an email into the input field.
+- If input `matches` the `email` `pattern` below the input field user will see :
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Full `email` address entered
+2. Only the first part of `email`, before the `@` sign.
+3. The second part of the `email`, all after and including the `@` sign.
+4. A `mailto` link to the `email` user has entered.
+5. A green `checkmark` next to the input field.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Complete following steps to run the app:
+1. Download and Install [Node.js](https://nodejs.org/en/).
+2. Download and Install [Angular CLI](https://cli.angular.io/).
+3. Download the [source code](https://github.com/Likh-Alex/email_validator).
+4. Navigate in `terminal` with to the source code root folder and run command `npm install`
+5. Once the packages are installed run command `ng serve`
+6. Once you will see message `✔ Compiled successfully.`- open your browser on `http://localhost:4200/` and use the application.
