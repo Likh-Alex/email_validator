@@ -1,13 +1,13 @@
 ## Email validator application
 
-### This application validates the user entered email
+### This application validates email entered by user
 
 - User is prompted to enter an email into the input field.
-- If input `matches` the `email` `pattern` below the input field user will see :
+- If input `matches` the `email pattern` - than user will see the following information below the input field :
 
-1. Full `email` address entered
+1. Full `email` address entered.
 2. Only the first part of `email`, before the `@` sign.
-3. The second part of the `email`, all after and including the `@` sign.
+3. The second part of the `email`, including the `@` sign and  all after it.
 4. A `mailto` link to the `email` user has entered.
 5. A green `checkmark` next to the input field.
 
